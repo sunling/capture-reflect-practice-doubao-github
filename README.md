@@ -37,12 +37,14 @@ GitHub 版本统一保存 Markdown，因此不包含飞书版专用的 `capture-
 
 1. 如果要保存真实日记，建议先把仓库设为 **Private**。
 2. 填写 [PROFILE.md](PROFILE.md) 中的时区、语言与隐私边界。
-3. 创建或打开一个豆包智能体，添加能够读取和写入 GitHub 仓库的插件或工具，完成 GitHub 授权，并指定这个仓库作为唯一的记录仓库。
-4. 打开准备使用的 `skills/<skill-name>/SKILL.md`，把完整内容安装为豆包 Skill。
+3. 创建或打开一个豆包智能体，添加能够读取和写入 GitHub 仓库的插件或工具，并完成 GitHub 授权。
+4. 打开准备使用的 `skills/<skill-name>/SKILL.md`，先把其中的 `YOUR_GITHUB_USERNAME/YOUR_REPOSITORY` 替换成自己的 `owner/repository`，再把完整内容安装为豆包 Skill。
 5. 先安装并测试 `capture-journal` 或 `capture-note`：使用一条不敏感的内容，确认豆包能读取目标仓库、创建或更新 Markdown 文件，并返回真实的 GitHub 文件链接或 commit 结果。
 6. 基础读写确认成功后，再根据[计划任务说明](scheduled-task-prompts/README.md)配置 `weekly-review` 或 `bubble-breaker`。
 
 只有 GitHub 返回写入或提交成功，才算持久化完成。豆包运行环境中的临时文件、待复制正文或模拟命令都不算已经保存。
+
+> 豆包没有 Project Settings，单独安装的 Skill 也不会自动继承本 README。因此目标仓库必须写进每一份 Skill。这里的重复是有意保留的，不能只在一处配置。
 
 ## GitHub 写入约定
 

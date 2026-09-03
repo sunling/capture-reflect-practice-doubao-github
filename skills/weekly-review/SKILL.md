@@ -5,6 +5,12 @@ description: 回看最近七天或指定范围内的 `journals/` 与 `notes/`，
 
 # Weekly Review｜回看、追问与发现方向
 
+## GitHub 仓库配置（安装前必填）
+
+目标记录仓库：`YOUR_GITHUB_USERNAME/YOUR_REPOSITORY`
+
+豆包没有 Project Settings。安装本 Skill 前，必须把上面的占位符替换为实际的 `owner/repository`。所有读取、搜索、创建和更新只在这个仓库中进行；若占位符尚未替换、仓库不存在或当前 GitHub 工具无权访问，停止执行并请用户提供或确认仓库，不搜索、猜测或改写其他仓库，也不退回临时本地文件冒充保存成功。分支未另外指定时使用该仓库的默认分支。
+
 ## 目标
 
 把分散在 `journals/` 与 `notes/` 中的生活与输入重新带回来，形成一份可追溯的回看档案。帮助使用者看见自己的注意力、回答问题，并发现少量可能的输出或实践方向。
