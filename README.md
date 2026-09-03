@@ -31,8 +31,6 @@ notes/{YYYY}/{YYYYMM}/{YYYYMMDD}-{关键词}.md
 - [develop-practice](skills/develop-practice/SKILL.md)：把有重复、行动或反馈证据的线索发展为持续实践。
 - [bubble-breaker](skills/bubble-breaker/SKILL.md)：发现一个陌生资源，完成后再留下轻量记录。
 
-GitHub 版本统一保存 Markdown，因此不包含飞书版专用的 `capture-journal-feishudoc`。
-
 ## 开始使用
 
 1. 如果要保存真实日记，建议先把仓库设为 **Private**。
@@ -43,8 +41,6 @@ GitHub 版本统一保存 Markdown，因此不包含飞书版专用的 `capture-
 6. 基础读写确认成功后，再根据[计划任务说明](scheduled-task-prompts/README.md)配置 `weekly-review` 或 `bubble-breaker`。
 
 只有 GitHub 返回写入或提交成功，才算持久化完成。豆包运行环境中的临时文件、待复制正文或模拟命令都不算已经保存。
-
-> 豆包没有 Project Settings，单独安装的 Skill 也不会自动继承本 README。因此目标仓库必须写进每一份 Skill。这里的重复是有意保留的，不能只在一处配置。
 
 ## GitHub 写入约定
 
