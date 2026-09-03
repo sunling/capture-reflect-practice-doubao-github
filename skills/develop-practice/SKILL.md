@@ -5,11 +5,11 @@ description: 将 `journals/` 与 `notes/` 中反复出现、已经行动或获�
 
 # Develop Practice｜把记录发展成实践
 
-## GitHub 仓库配置（安装前必填）
+## 目标仓库
 
-目标记录仓库：`YOUR_GITHUB_USERNAME/YOUR_REPOSITORY`
+GitHub 仓库：`YOUR_GITHUB_USERNAME/YOUR_REPOSITORY`
 
-安装本 Skill 前，必须把上面的占位符替换为实际的 `owner/repository`。所有读取、搜索、创建和更新只在这个仓库中进行；若占位符尚未替换、仓库不存在或当前 GitHub 工具无权访问，停止执行并请用户提供或确认仓库，不搜索、猜测或改写其他仓库，也不退回临时本地文件冒充保存成功。分支未另外指定时使用该仓库的默认分支。
+只读取和写入这个仓库。若仓库仍是占位符，先请用户提供准确的 `owner/repository`；确认前不要执行任何仓库操作。分支未另外指定时使用该仓库的默认分支。
 
 ## 目标
 
@@ -168,7 +168,7 @@ practices/<实践名>/
 
 ## GitHub 执行方式
 
-1. 使用豆包中已授权的 GitHub 工具。没有明确的记录仓库时先询问，不猜测用户名、仓库名或分支。
+1. 使用豆包中已授权的 GitHub 工具操作目标仓库。
 2. 从仓库默认分支读取相关 `journals/`、`notes/` 以及已有的近义实践。`practices/` 尚不存在时，可随第一份 `mission.md` 一起创建；GitHub 不需要预先创建空目录。
 3. 新建实践时在同一次变更中写入 `mission.md` 与 `current.md`；更新时先完整读取最新文件，只改动本轮确实变化的部分。
 4. 提交信息应简短明确，例如 `Start <practice-name> practice` 或 `Update <practice-name> practice`。
